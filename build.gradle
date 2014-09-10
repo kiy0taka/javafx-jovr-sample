@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.saintandreas:math:1.0.4',
+            'org.saintandreas:oria-resources:1.0.3',
+            'org.saintandreas:jovr:0.4.2.0'
+    compile files("${System.env['JAVA_HOME']}/jre/lib/ext/jfxrt.jar")
+}
